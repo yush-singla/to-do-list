@@ -119,6 +119,6 @@ app.get("/:parameter",function(req,res){
   });
 });
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+app.listen(process.env.PORT||3000, function() {
+  console.log("Server started now");
 });
